@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="171f210e-5a68-4f63-a17e-0626cbbe6694" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/bai/course/AggregateFunctionExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bai/course/AggregateFunctionExample.scala" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="I:\SSDData\data\idea3\togithub\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="C:\SoftwareTools\apache-maven-3.5.3\repository" />
+        <option name="mavenHome" value="C:/SoftwareTools/apache-maven-3.5.3" />
+        <option name="userSettingsFile" value="C:\SoftwareTools\apache-maven-3.5.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1ba8RxAai63BCQoJC3XFR4ki0gk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\SSDData\data\idea3\togithub\src\main" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+    <option name="myConnectionType" value="NONE" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="171f210e-5a68-4f63-a17e-0626cbbe6694" name="Default Changelist" comment="" />
+      <created>1588858839892</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588858839892</updated>
+      <workItem from="1588858843707" duration="1969000" />
+    </task>
+    <task id="LOCAL-00001" summary="ddddddd">
+      <created>1588858909788</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588858909788</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ddddddd">
+      <created>1588859672620</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1588859672620</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ddddddd">
+      <created>1588859795052</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588859795052</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ddddddd" />
+    <option name="LAST_COMMIT_MESSAGE" value="ddddddd" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="759" y="438" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1588859307942">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="759" y="438" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588859307942" />
+    <state x="626" y="114" key="CommitChangelistDialog2" timestamp="1588859785460">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="626" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588859785460" />
+    <state x="793" y="262" key="FileChooserDialogImpl" timestamp="1588858880808">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="793" y="262" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588858880808" />
+    <state width="1421" height="212" key="GridCell.Tab.0.bottom" timestamp="1588859999618">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1421" height="212" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588859999618" />
+    <state width="1421" height="212" key="GridCell.Tab.0.center" timestamp="1588859999618">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1421" height="212" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588859999618" />
+    <state width="1421" height="212" key="GridCell.Tab.0.left" timestamp="1588859999618">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1421" height="212" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588859999618" />
+    <state width="1421" height="212" key="GridCell.Tab.0.right" timestamp="1588859999618">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1421" height="212" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588859999618" />
+    <state x="605" y="254" key="Vcs.Push.Dialog.v2" timestamp="1588859795599">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="605" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588859795599" />
+    <state x="803" y="320" key="git4idea.merge.GitMergeDialog" timestamp="1588858986663">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="803" y="320" key="git4idea.merge.GitMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588858986663" />
+    <state x="803" y="320" key="git4idea.merge.GitPullDialog" timestamp="1588858958321">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="803" y="320" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588858958321" />
+  </component>
+  <component name="ideajad">
+    <property name="annotate" value="false" />
+    <property name="annotateFully" value="false" />
+    <property name="braces" value="false" />
+    <property name="clear" value="false" />
+    <property name="confirmNavigationTriggeredDecompile" value="true" />
+    <property name="dead" value="true" />
+    <property name="defaultInitializers" value="false" />
+    <property name="dissassemblerOnly" value="false" />
+    <property name="fieldsFirst" value="true" />
+    <property name="fileExtension" value="java" />
+    <property name="fullyQualifiedNames" value="false" />
+    <property name="indentation" value="4" />
+    <property name="intRadix" value="10" />
+    <property name="lineNumbersAsComments" value="true" />
+    <property name="longRadix" value="10" />
+    <property name="maxStringLength" value="64" />
+    <property name="nocast" value="false" />
+    <property name="noclass" value="false" />
+    <property name="nocode" value="false" />
+    <property name="noconv" value="false" />
+    <property name="noctor" value="false" />
+    <property name="nodos" value="false" />
+    <property name="nofd" value="false" />
+    <property name="noinner" value="false" />
+    <property name="nolvt" value="false" />
+    <property name="nonlb" value="false" />
+    <property name="outputDirectory" value="" />
+    <property name="packFields" value="3" />
+    <property name="packImports" value="7" />
+    <property name="prefixNumericalClasses" value="_cls" />
+    <property name="prefixNumericalFields" value="_fld" />
+    <property name="prefixNumericalLocals" value="_lcl" />
+    <property name="prefixNumericalMethods" value="_mth" />
+    <property name="prefixNumericalParameters" value="_prm" />
+    <property name="prefixUnusedExceptions" value="_ex" />
+    <property name="readonly" value="false" />
+    <property name="safe" value="false" />
+    <property name="sort" value="false" />
+    <property name="spaceAfterKeyword" value="false" />
+    <property name="splitStringsAtNewline" value="false" />
+    <property name="useTabs" value="false" />
+  </component>
+</project>

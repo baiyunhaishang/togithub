@@ -11,7 +11,7 @@ object AggregateFunctionExample {
   def main(args: Array[String]): Unit = {
     val env = StreamExecutionEnvironment.getExecutionEnvironment
     env.setParallelism(1)
-    val sensorData = env.addSource(new SensorSource)
+    val sensorData: DataStream[SensorReading] = env.addSource(new SensorSource)
     val avgTempPerWindow = sensorData
       .map(r => (r.id, r.temperature))
       .keyBy(_._1)
@@ -29,16 +29,16 @@ object AggregateFunctionExample {
 
     override def add(value: (String, Double), accumulator: (String, Double, Int)): (String, Double, Int) = {
       // 第一个元素将id保留下来，元组的第二个元素是传感器读数的总数，第三个元素是一共有多少个传感器读数
-      (value._1, value._2 + accumulator._2, accumulator._3 + 1)
+      (value._1, value._2 + accumulator._2, accumulator._3 + 1)  //新元素的map之后按照key分组（key,temperature),acc是创建的起始值
     }
-
+    override def merge(a: (String, Double, Int), b: (String, Double, Int)): (String, Double, Int) = {
+      (a._1, a._2 + b._2, a._3 + b._3)//处理add之后的分区间聚合
+    }
     override def getResult(accumulator: (String, Double, Int)): (String, Double) = {
       // 第一个元素将 id 保留了下来，第二个元素：平均值 = 温度总和 / 一共有多少个温度读数
-      (accumulator._1, accumulator._2 / accumulator._3)
+      (accumulator._1, accumulator._2 / accumulator._3)  //处理merge之后的数据
     }
 
-    override def merge(a: (String, Double, Int), b: (String, Double, Int)): (String, Double, Int) = {
-      (a._1, a._2 + b._2, a._3 + b._3)
-    }
+
   }
 }
