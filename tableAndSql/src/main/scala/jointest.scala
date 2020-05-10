@@ -1,3 +1,9 @@
+import java.util.concurrent.TimeUnit
+
+import org.apache.flink.api.common.restartstrategy.RestartStrategies
+import org.apache.flink.api.common.time.Time
+import org.apache.flink.contrib.streaming.state.RocksDBStateBackend
+import org.apache.flink.runtime.state.filesystem.FsStateBackend
 import org.apache.flink.streaming.api.TimeCharacteristic
 import org.apache.flink.streaming.api.scala._
 import org.apache.flink.table.api.scala._
@@ -13,6 +19,16 @@ object jointest {
   def main(args: Array[String]): Unit = {
     val env = StreamExecutionEnvironment.getExecutionEnvironment
     env.setParallelism(1)
+
+    val checkpointPath: String = "./"
+    val backend = new RocksDBStateBackend(checkpointPath)
+
+    env.setStateBackend(backend)
+    env.setStateBackend(new FsStateBackend("./checkpoints"))
+    env.enableCheckpointing(1000)
+    // 配置重启策略
+    env.setRestartStrategy(RestartStrategies.fixedDelayRestart(60, Time.of(10, TimeUnit.SECONDS)))
+
     env.setStreamTimeCharacteristic(TimeCharacteristic.EventTime)
 
     val inputStream: DataStream[String] = env.readTextFile("I:\\SSDData\\data\\idea3\\testFlinkKafka\\hotIterm\\src\\main\\resources\\UserBehavior.csv")
@@ -55,3 +71,21 @@ object jointest {
   }
 
 }
+/*val sinkDDL: String =
+  """
+    |create table jdbcOutputTable (
+    |  id varchar(20) not null,
+    |  cnt bigint not null
+    |) with (
+    |  'connector.type' = 'jdbc',
+    |  'connector.url' = 'jdbc:mysql://localhost:3306/test',
+    |  'connector.table' = 'sensor_count',
+    |  'connector.driver' = 'com.mysql.jdbc.Driver',
+    |  'connector.username' = 'root',
+    |  'connector.password' = '123456'
+    |)
+  """.stripMargin
+
+tableEnv.sqlUpdate(sinkDDL)
+aggResultSqlTable.insertInto("jdbcOutputTable")
+*/
