@@ -8,7 +8,7 @@ object SideOutputExample {
   def main(args: Array[String]): Unit = {
     val env = StreamExecutionEnvironment.getExecutionEnvironment
     env.setParallelism(1)
-    val readings = env.addSource(new SensorSource).keyBy(_.id)
+    val readings: KeyedStream[SensorReading, String] = env.addSource(new SensorSource).keyBy(_.id)
     val monitoredReadings = readings.process(new FreezingMonitor)
 
     // 打印侧输出流

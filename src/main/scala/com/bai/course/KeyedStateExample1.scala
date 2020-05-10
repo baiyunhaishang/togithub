@@ -24,7 +24,7 @@ object KeyedStateExample1 {
   class TemperatureAlertFunction(val threshold: Double) extends RichFlatMapFunction[SensorReading, (String, Double, Double)] {
     private var lastTempState : ValueState[Double] = _
 
-    override def open(parameters: Configuration): Unit = {
+    override def open(parameters: Configuration): Unit = {  //初始化
       lastTempState = getRuntimeContext.getState(
         new ValueStateDescriptor[Double]("lastTempState", Types.of[Double])
       )
@@ -36,7 +36,7 @@ object KeyedStateExample1 {
 //    )
 
     override def flatMap(value: SensorReading, out: Collector[(String, Double, Double)]): Unit = {
-      val lastTemp = lastTempState.value()
+      val lastTemp = lastTempState.value()  //取初始化的值或者上次
       val tempDiff = (value.temperature - lastTemp).abs
       if (tempDiff > threshold) {
         out.collect((value.id, value.temperature, lastTemp))

@@ -45,7 +45,7 @@ object KeyedProcessFunctionExample {
     // 每到来一条事件，都会调用一次
     override def processElement(value: SensorReading,
                                 // #是类型投影的意思，用来访问内部类
-                                ctx: KeyedProcessFunction[String, SensorReading, String]#Context,
+                                ctx: KeyedProcessFunction[String, SensorReading, String]#Context, //内部类java
                                 out: Collector[String]): Unit = {
       // ValueState的读取使用`.value()`方法
       // 如果当前读数是传感器的第一条数据，那么 prevTemp 的值是 0.0

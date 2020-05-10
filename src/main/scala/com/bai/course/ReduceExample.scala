@@ -4,7 +4,7 @@ import org.apache.flink.streaming.api.scala._
 
 object ReduceExample {
   def main(args: Array[String]): Unit = {
-    val env = StreamExecutionEnvironment.getExecutionEnvironment
+    val env: StreamExecutionEnvironment = StreamExecutionEnvironment.getExecutionEnvironment
     env.setParallelism(1)
 
     // scala列表拼接操作

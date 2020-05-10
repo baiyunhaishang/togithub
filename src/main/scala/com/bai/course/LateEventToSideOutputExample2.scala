@@ -28,7 +28,7 @@ object LateEventToSideOutputExample2 {
   }
 
   class MyKeyedProcessFunction extends KeyedProcessFunction[String, (String, Long), (String, Long)] {
-    val lateReadingOut = new OutputTag[(String, Long)]("late-readings")
+    val lateReadingOut: OutputTag[(String, Long)] = new OutputTag[(String, Long)]("late-readings")
 
     override def processElement(value: (String, Long),
                                 ctx: KeyedProcessFunction[String, (String, Long), (String, Long)]#Context,

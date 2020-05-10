@@ -22,6 +22,15 @@ object AggregateWithProcessWindowExample {
       .timeWindow(Time.seconds(5))
       .aggregate(new MyAgg, new AssignWindowEndProcessFunction)
 
+    val a=sensorData
+      .map(r => (r.id,r.temperature))
+      .keyBy(_._1)
+        .countWindow(30)
+        .aggregate(new MyAgg, new AssignWindowEndProcessFunction)
+
+//        .sum(_)
+
+
     minMaxTempPerWindow.print()
 
     env.execute()
@@ -47,4 +56,19 @@ object AggregateWithProcessWindowExample {
       (a._1, a._2.min(b._2), a._3.max(b._3))
     }
   }
+
+}
+
+class countagg extends AggregateFunction[(SensorReading,String),(String,Long),(String,Long)] {
+  override def createAccumulator() = ("",0)
+
+  override def add(value: (SensorReading, String), accumulator: (String, Long)): (String, Long) = (value._1.id,accumulator._2+value._1.temperature.toLong)
+
+  override def getResult(accumulator: (String, Long)): (String, Long) = (accumulator._1,accumulator._2)
+
+  override def merge(a: (String, Long), b: (String, Long)): (String, Long) = (a._1,a._2+b._2)
+}
+
+class cnwin extends ProcessWindowFunction {
+  override def process(key: Nothing, context: Context, elements: Iterable[Nothing], out: Collector[Nothing]): Unit = ???
 }

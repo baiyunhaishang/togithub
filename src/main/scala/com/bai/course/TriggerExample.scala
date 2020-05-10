@@ -42,13 +42,13 @@ object TriggerExample {
       )
 
       if (!firstSeen.value()) {
-        val t = ctx.getCurrentWatermark + (1000 - (ctx.getCurrentWatermark % 1000))
-        ctx.registerEventTimeTimer(t)
-        ctx.registerEventTimeTimer(window.getEnd)
-        firstSeen.update(true)
+        val t: Long = ctx.getCurrentWatermark + (1000 - (ctx.getCurrentWatermark % 1000))  //1000+(1000-1000%1000)=2000  1001+(1000-1001%1000)=2000 取整数秒
+        ctx.registerEventTimeTimer(t)  //水位线到达时触发
+        ctx.registerEventTimeTimer(window.getEnd)  //窗口结束时触发
+        firstSeen.update(true)   //第一次看到了
       }
 
-      TriggerResult.CONTINUE
+      TriggerResult.CONTINUE  //CONTINUE(false, false),fire purge  //状态中为false
     }
 
     override def onEventTime(time: Long, window: TimeWindow, ctx: Trigger.TriggerContext): TriggerResult = {
@@ -60,7 +60,7 @@ object TriggerExample {
         if (t < window.getEnd) {
           ctx.registerEventTimeTimer(t)
         }
-        TriggerResult.FIRE
+        TriggerResult.FIRE  //水位线大于wondowend,不清空状态，但计算一次
       }
     }
 

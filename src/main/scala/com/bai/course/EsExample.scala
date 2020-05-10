@@ -25,7 +25,7 @@ object EsExample {
       new ElasticsearchSinkFunction[String] {
         def createIndexRequest(element: String) : IndexRequest = {
           val json = new util.HashMap[String, String]
-          json.put("atguigu", element)
+          json.put("bai", element)
 
           Requests
             .indexRequest()
