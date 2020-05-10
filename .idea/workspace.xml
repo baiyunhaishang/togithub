@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="171f210e-5a68-4f63-a17e-0626cbbe6694" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tableAndSql/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tableAndSql/src/main/resources/UserBehavior.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tableAndSql/src/main/scala/HotItemsWithSQL.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tableAndSql/tableAndSql.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/bai/course/AggregateWithProcessWindowExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bai/course/AggregateWithProcessWindowExample.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/bai/course/EsExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bai/course/EsExample.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/bai/course/KeyedProcessFunctionExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bai/course/KeyedProcessFunctionExample.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/bai/course/KeyedStateExample1.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bai/course/KeyedStateExample1.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/bai/course/KeyedStateExample2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bai/course/KeyedStateExample2.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/bai/course/LateEventToSideOutputExample2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bai/course/LateEventToSideOutputExample2.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/bai/course/ReduceExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bai/course/ReduceExample.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/bai/course/SensorSource.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bai/course/SensorSource.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/bai/course/SideOutputExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bai/course/SideOutputExample.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/bai/course/TriggerExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bai/course/TriggerExample.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/bai/course/UnionExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bai/course/UnionExample.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +53,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tableAndSql/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tableAndSql/src/main/scala" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -118,7 +99,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588858839892</updated>
       <workItem from="1588858843707" duration="10819000" />
-      <workItem from="1589083538439" duration="509000" />
+      <workItem from="1589083538439" duration="2309000" />
     </task>
     <task id="LOCAL-00001" summary="ddddddd">
       <created>1588858909788</created>
@@ -148,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588860982130</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="aa">
+      <created>1589084071084</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589084071085</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,10 +156,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="216" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1588862050595" />
-    <state x="626" y="114" key="CommitChangelistDialog2" timestamp="1588860974453">
+    <state x="626" y="114" key="CommitChangelistDialog2" timestamp="1589084065536">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="626" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588860974453" />
+    <state x="626" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589084065536" />
     <state x="793" y="262" key="FileChooserDialogImpl" timestamp="1588858880808">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -196,10 +184,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="583" y="291" width="549" height="524" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1588869650951" />
-    <state x="605" y="254" key="Vcs.Push.Dialog.v2" timestamp="1588861021812">
+    <state x="605" y="254" key="Vcs.Push.Dialog.v2" timestamp="1589084072844">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="605" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588861021812" />
+    <state x="605" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589084072844" />
     <state x="803" y="320" key="git4idea.merge.GitMergeDialog" timestamp="1588858986663">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
