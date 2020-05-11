@@ -1,16 +1,7 @@
-import java.util.concurrent.TimeUnit
-
-import org.apache.flink.api.common.restartstrategy.RestartStrategies
-import org.apache.flink.api.common.time.Time
-import org.apache.flink.contrib.streaming.state.RocksDBStateBackend
-import org.apache.flink.runtime.state.filesystem.FsStateBackend
 import org.apache.flink.streaming.api.TimeCharacteristic
 import org.apache.flink.streaming.api.scala._
 import org.apache.flink.table.api.scala._
 import org.apache.flink.table.api.{EnvironmentSettings, Table}
-
-// 定义输入数据的样例类
-case class UserBehavior(userId: Long, itemId: Long, categoryId: Int, behavior: String, timestamp: Long)
 
 // 定义窗口聚合结果的样例类
 case class ItemViewCount(itemId: Long, windowEnd: Long, count: Long)
@@ -20,14 +11,14 @@ object jointest {
     val env = StreamExecutionEnvironment.getExecutionEnvironment
     env.setParallelism(1)
 
-    val checkpointPath: String = "./"
-    val backend = new RocksDBStateBackend(checkpointPath)
-
-    env.setStateBackend(backend)
-    env.setStateBackend(new FsStateBackend("./checkpoints"))
-    env.enableCheckpointing(1000)
+//    val checkpointPath: String = "jetbrains://idea/navigate/reference?project=togithub&fqn="
+//    val backend = new RocksDBStateBackend(checkpointPath)
+//
+//    env.setStateBackend(backend)
+//    env.setStateBackend(new FsStateBackend("jetbrains://idea/navigate/reference?project=togithub&fqn="))
+//    env.enableCheckpointing(1000)
     // 配置重启策略
-    env.setRestartStrategy(RestartStrategies.fixedDelayRestart(60, Time.of(10, TimeUnit.SECONDS)))
+//    env.setRestartStrategy(RestartStrategies.fixedDelayRestart(60, Time.of(10, TimeUnit.SECONDS)))
 
     env.setStreamTimeCharacteristic(TimeCharacteristic.EventTime)
 
