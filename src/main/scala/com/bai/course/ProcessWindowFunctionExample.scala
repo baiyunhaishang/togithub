@@ -31,7 +31,7 @@ object ProcessWindowFunctionExample {
   class HighAndLowTempProcessFunction extends ProcessWindowFunction[SensorReading, MinMaxTemp, String, TimeWindow] {
     // 当窗口闭合的时候调用，Iterable里面包含了窗口收集的所有元素
     override def process(key: String, context: Context, elements: Iterable[SensorReading], out: Collector[MinMaxTemp]): Unit = {
-      val temps = elements.map(_.temperature)
+      val temps = elements.map(_.temperature)  //
       val windowEnd = context.window.getEnd
 
       out.collect(MinMaxTemp(key, temps.min, temps.max, windowEnd))

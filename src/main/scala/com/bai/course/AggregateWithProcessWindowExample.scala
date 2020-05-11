@@ -22,11 +22,11 @@ object AggregateWithProcessWindowExample {
       .timeWindow(Time.seconds(5))
       .aggregate(new MyAgg, new AssignWindowEndProcessFunction)
 
-    val a=sensorData
-      .map(r => (r.id,r.temperature))
+    val a=minMaxTempPerWindow
+      .map(r => (r.id,r.min))
       .keyBy(_._1)
-        .countWindow(30)
-        .aggregate(new MyAgg, new AssignWindowEndProcessFunction)
+      .reduce((a,b)=>(a._1,a._2+b._2))  //第一个是key，第二个是增量聚合方式
+
 
 //        .sum(_)
 
@@ -38,7 +38,7 @@ object AggregateWithProcessWindowExample {
 
   class AssignWindowEndProcessFunction extends ProcessWindowFunction[(String, Double, Double), MinMaxTemp, String, TimeWindow] {
     override def process(key: String, context: Context, elements: Iterable[(String, Double, Double)], out: Collector[MinMaxTemp]): Unit = {
-      val e = elements.iterator.next()
+      val e = elements.iterator.next()   //窗口聚合后的最终结果
       out.collect(MinMaxTemp(key, e._2, e._3, context.window.getEnd))
     }
   }

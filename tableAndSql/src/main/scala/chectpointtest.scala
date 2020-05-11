@@ -1,7 +1,6 @@
 import java.util
 import java.util.concurrent.TimeUnit
 
-import com.atguigu.apitest.SensorReading
 import org.apache.flink.api.common.functions.{MapFunction, ReduceFunction, RichFlatMapFunction, RichMapFunction}
 import org.apache.flink.api.common.restartstrategy.RestartStrategies
 import org.apache.flink.api.common.state._
@@ -17,13 +16,7 @@ import org.apache.flink.streaming.api.scala._
 import org.apache.flink.util.Collector
 
 /**
-  * Copyright (c) 2018-2028 尚硅谷 All Rights Reserved 
-  *
-  * Project: FlinkTutorial
-  * Package: day5
-  * Version: 1.0
-  *
-  * Created by wushengran on 2020/4/21 11:45
+  
   */
 object StateTest {
   def main(args: Array[String]): Unit = {

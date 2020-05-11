@@ -14,6 +14,7 @@ import org.apache.flink.streaming.api.windowing.time.Time
 import org.apache.flink.streaming.api.windowing.windows.TimeWindow
 import org.apache.flink.util.Collector
 
+import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
 
 object HotItems {
@@ -51,14 +52,14 @@ object HotItems {
     }
 
     override def onTimer(timestamp: Long, ctx: KeyedProcessFunction[Long, ItemViewCount, String]#OnTimerContext, out: Collector[String]): Unit = {
-      val allItems: ListBuffer[ItemViewCount] = ListBuffer()
+      val allItems: ListBuffer[ItemViewCount] = ListBuffer()   //每个窗口的处理逻辑
       import scala.collection.JavaConversions._
       for (item <- itemState.get) {
         allItems += item
       }
       itemState.clear()
 
-      val sortedItems = allItems.sortBy(-_.count).take(n)
+      val sortedItems: mutable.Seq[ItemViewCount] = allItems.sortBy(-_.count).take(n)
       val result = new StringBuilder
       result
         .append("==================================")
@@ -86,7 +87,7 @@ object HotItems {
 
   class WindowResultFunction extends ProcessWindowFunction[Long, ItemViewCount, Long, TimeWindow] {
     override def process(key: Long, context: Context, elements: Iterable[Long], out: Collector[ItemViewCount]): Unit = {
-      out.collect(ItemViewCount(key, context.window.getEnd, elements.iterator.next()))
+      out.collect(ItemViewCount(key, context.window.getEnd, elements.iterator.next())) //窗口最终每个key的value值
     }
   }
 

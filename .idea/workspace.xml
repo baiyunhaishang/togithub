@@ -3,7 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="171f210e-5a68-4f63-a17e-0626cbbe6694" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tableAndSql/src/main/scala/jointest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/tableAndSql/src/main/scala/jointest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/bai/course/AggregateFunctionExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bai/course/AggregateFunctionExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/bai/course/AggregateWithProcessWindowExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bai/course/AggregateWithProcessWindowExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/bai/course/ProcessWindowFunctionExample.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bai/course/ProcessWindowFunctionExample.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/bai/project/appmarketing/AppMarketingByChannel.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bai/project/appmarketing/AppMarketingByChannel.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/bai/project/loginfail/LoginFailWithoutCEP.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bai/project/loginfail/LoginFailWithoutCEP.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/bai/project/topnhotitems/HotItems.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/bai/project/topnhotitems/HotItems.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tableAndSql/src/main/scala/chectpointtest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/tableAndSql/src/main/scala/chectpointtest.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,6 +124,7 @@
       <workItem from="1588858843707" duration="10819000" />
       <workItem from="1589083538439" duration="2309000" />
       <workItem from="1589094489302" duration="3909000" />
+      <workItem from="1589204764657" duration="3212000" />
     </task>
     <task id="LOCAL-00001" summary="ddddddd">
       <created>1588858909788</created>
@@ -168,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589102863542</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="aaad">
+      <created>1589204802056</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1589204802056</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,7 +191,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ddddddd" />
     <MESSAGE value="aa" />
-    <option name="LAST_COMMIT_MESSAGE" value="aa" />
+    <MESSAGE value="aaad" />
+    <option name="LAST_COMMIT_MESSAGE" value="aaad" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589102903661">
@@ -192,10 +207,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="216" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1588862050595" />
-    <state x="626" y="114" key="CommitChangelistDialog2" timestamp="1589102861056">
+    <state x="626" y="114" key="CommitChangelistDialog2" timestamp="1589211375550">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="626" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589102861056" />
+    <state x="626" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589211375550" />
     <state x="793" y="262" key="FileChooserDialogImpl" timestamp="1588858880808">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -220,10 +235,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="583" y="291" width="549" height="524" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1588869650951" />
-    <state x="605" y="254" key="Vcs.Push.Dialog.v2" timestamp="1589102886113">
+    <state x="605" y="254" key="Vcs.Push.Dialog.v2" timestamp="1589204842760">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="605" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589102886113" />
+    <state x="605" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589204842760" />
     <state x="803" y="320" key="git4idea.merge.GitMergeDialog" timestamp="1588858986663">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

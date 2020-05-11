@@ -22,7 +22,7 @@ object AppMarketingByChannel {
         ((r.channel, r.behavior), 1L)
       })
       // .keyBy("channel", "behavior")
-      .keyBy(_._1)
+      .keyBy(_._1)   //key为map的输出
       .timeWindow(Time.seconds(5), Time.seconds(1))
       .process(new MarketingCountByChannel)
 

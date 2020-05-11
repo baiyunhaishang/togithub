@@ -46,7 +46,7 @@ object LoginFailWithoutCEP {
         if (timestamp.value() == 0L) {
           val ts = value.eventTime.toLong * 1000 + 5000L
           timestamp.update(ts)
-          ctx.timerService().registerEventTimeTimer(ts)
+          ctx.timerService().registerEventTimeTimer(ts)//注册5秒以后的定时器
         }
       }
 

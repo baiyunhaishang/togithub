@@ -21,6 +21,7 @@ object AggregateFunctionExample {
 
     avgTempPerWindow.print()
 
+
     env.execute()
   }
 
